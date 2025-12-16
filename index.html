@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPS | Game</title>
+</head>
+<body>
+    
+    <div class="loader">
+        <span>
+        </span>
+    </div>
+
+    <div class="main_box">
+        <div class="game_header">
+            <a href="#" class="main_link">
+                <img src="/imgs/tipa-logo.svg" alt="" aria-hidden="true" id="logo">
+            </a>
+            <div class="score_box">
+                <span class="score_text">score</span>
+                <span id="scoreText" class="score_main">0</span>
+            </div>
+        </div>
+        <div class="game_box basic">
+            <img class="hands" src="/imgs/paper.svg" alt="paper" aria-hidden="true">
+            <img class="hands" src="/imgs/scissors.svg" alt="scissors" aria-hidden="true">
+            <img class="hands" src="/imgs/rock.svg" alt="rock" aria-hidden="true">
+            <img class="hands advanced" class="advanced" src="/imgs/lizard.svg" alt="lizard" aria-hidden="true">
+            <img class="hands advanced" src="/imgs/spock.svg" alt="spock" aria-hidden="true">
+        </div>
+        <div class="result_box">
+            <div>
+                <img src="./imgs/hand-load.svg" alt="" aria-hidden="true" class="user_img">
+            </div>
+            <div class="try_box">
+                <span class="result_text" style="text-align: center;">
+                    Loading
+                </span>
+                <button class="again_btn">
+                    play again
+                </button>
+            </div>
+            <div>
+                <img src="./imgs/hand-load.svg" alt="" class="robot_img">
+            </div>
+        </div>
+    
+
+        <div class="btns_menu">
+            <button id="modeBtn">
+                advanced
+            </button>
+            <button id="rulesBtn">
+                rules
+            </button>
+        </div>
+
+        <div class="rules hidden">      
+            <div class="rules_modal">
+                <div class="rules_head">
+                    <span>
+                        rules
+                    </span>
+                    <button class="modal_close">
+                        🗙
+                    </button>
+                </div>
+                <img src="/imgs/rule-basic.svg" alt="" id="rulesImg">
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./js/main.js"></script>
+    
+</body>
+</html>
