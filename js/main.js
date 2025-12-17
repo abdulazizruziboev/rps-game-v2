@@ -38,11 +38,13 @@ function changeMode() {
         elGameBox.classList.add("basic");
         document.getElementById("logo").src = "/imgs/tipa-logo.svg";
         elRulesImg.src="imgs/rule-basic.svg";
+        elModeBtn.textContent="advanced";
     } else {
         elGameBox.classList.remove("basic");
         elGameBox.classList.add("advanced");
         document.getElementById("logo").src = "/imgs/tipa-logo-advanced.svg";
         elRulesImg.src="imgs/rule-advanced.svg";
+        elModeBtn.textContent="basic";
     }
 };
 
@@ -51,11 +53,13 @@ if(localStorage.getItem("mode")=="basic") {
         elGameBox.classList.add("basic");
         document.getElementById("logo").src = "/imgs/tipa-logo.svg";
         elRulesImg.src="imgs/rule-basic.svg";
+        elModeBtn.textContent="advanced";
 } else {
         elGameBox.classList.remove("basic");
         elGameBox.classList.add("advanced");
         document.getElementById("logo").src = "/imgs/tipa-logo-advanced.svg";
         elRulesImg.src="imgs/rule-advanced.svg";
+        elModeBtn.textContent="basic";
 }
 
 function chooseRobot(arr) {
