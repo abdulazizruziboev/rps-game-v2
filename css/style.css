@@ -249,6 +249,21 @@ body {
     color: #fff;
 }
 
+.pick_box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.pick_text {
+    color: #fff;    
+    font-size: 35px;
+    text-transform: uppercase;
+    font-family: 'Barlow Semi Condensed';
+    font-weight: bolder;
+}
+
 .flex {
     display: flex !important;
 } 

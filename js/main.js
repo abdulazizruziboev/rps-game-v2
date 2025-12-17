@@ -99,6 +99,11 @@ elHands.forEach((btns) => {
         }
         let user = evt.target.alt;
         let robot = chooseRobot(basicHands);
+        if(localStorage.getItem("mode")=="basic") {
+            robot = chooseRobot(basicHands);
+        } else if(localStorage.getItem("mode")=="advanced") {
+            robot = chooseRobot(advancedHands);
+        };
         elUserImg.src = `imgs/${user}.svg`;
         elRobotImg.src = `imgs/hand-load.svg`
         setTimeout(()=>elRobotImg.src = `imgs/${robot}.svg`,1200)
